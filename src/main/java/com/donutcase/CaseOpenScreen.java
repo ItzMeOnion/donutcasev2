@@ -73,7 +73,7 @@ public class CaseOpenScreen extends Screen {
     }
 
     @Override
-    public boolean shouldPause() {
+    public boolean isPauseScreen() {
         return false;
     }
 
@@ -217,11 +217,11 @@ public class CaseOpenScreen extends Screen {
     }
 
     private static void drawScaledItem(GuiGraphics g, ItemStack stack, int x, int y, float scale) {
-        g.pose().pushPose();
-        g.pose().translate(x, y, 0);
-        g.pose().scale(scale, scale, 1);
+        g.pose().pushMatrix();
+        g.pose().translate(x, y);
+        g.pose().scale(scale, scale);
         g.renderItem(stack, 0, 0);
-        g.pose().popPose();
+        g.pose().popMatrix();
     }
 
     /** Border colour by how rare the item is. */
