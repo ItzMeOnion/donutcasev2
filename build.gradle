@@ -8,12 +8,9 @@ repositories {
 }
 
 loom {
-	splitEnvironmentSourceSets()
-
 	mods {
 		"donutcase" {
 			sourceSet sourceSets.main
-			sourceSet sourceSets.client
 		}
 	}
 }
