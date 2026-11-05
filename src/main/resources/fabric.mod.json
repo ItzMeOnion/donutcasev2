@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "donutcase",
+  "version": "${version}",
+  "name": "Case Opening",
+  "description": "Client-side case opening animation with cosmetic item values.",
+  "authors": [],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.donutcase.DonutCaseClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.8",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
